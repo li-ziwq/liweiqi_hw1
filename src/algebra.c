@@ -72,7 +72,7 @@ Matrix mul_matrix(Matrix a, Matrix b)
     }
     else
     {
-        printf("Error: Matrix a and b must have the same rows and cols.\n");
+        printf("Error: The number of cols of matrix a must be equal to the number of rows of matrix b.\n");
         return create_matrix(0, 0);
     }
 }
@@ -150,9 +150,9 @@ double det_matrix(Matrix a)
     else
     {
         double det = 0;
-        for (int j = 0; j < a.cols; ++j) // 注意这里应该是按列循环
+        for (int j = 0; j < a.cols; ++j) 
         {
-            Matrix cofactor = cofactor_matrix(a, 1, j + 1); // 注意参数顺序
+            Matrix cofactor = cofactor_matrix(a, 1, j + 1); 
             det += a.data[0][j] * (j % 2 ? -1 : 1) * det_matrix(cofactor);
         }
         return det;
@@ -162,9 +162,14 @@ double det_matrix(Matrix a)
 Matrix
 inv_matrix(Matrix a)
 {
-    if (det_matrix(a) == 0)
+    if (a.cols != a.rows)
     {
-        printf("Error: Matrix a is not invertible.\n");
+        printf("Error: The matrix must be a square matrix.\n");
+        return create_matrix(0, 0);
+    }
+    else if (det_matrix(a) == 0)
+    {
+        printf("Error: The matrix is singular.\n");
         return create_matrix(0, 0);
     }
     else
@@ -186,7 +191,6 @@ inv_matrix(Matrix a)
         }
         return m;
     }
-    return create_matrix(0, 0);
 }
 
 int rank_matrix(Matrix a)
@@ -235,6 +239,11 @@ int rank_matrix(Matrix a)
 
 double trace_matrix(Matrix a)
 {
+    if (a.cols != a.rows)
+    {
+        printf("Error: The matrix must be square.\n");
+        return 0;
+    }
     double trace = 0;
     for (int i = 0; i < a.rows; i++)
     {
