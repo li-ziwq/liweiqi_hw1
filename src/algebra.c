@@ -136,7 +136,7 @@ double det_matrix(Matrix a)
 {
     if (a.rows != a.cols)
     {
-        printf("Error: The matrix must be square.");
+        printf("Error: The matrix must be a square matrix.\n");
         return 0;
     }
     else if (a.rows == 1)
@@ -241,7 +241,7 @@ double trace_matrix(Matrix a)
 {
     if (a.cols != a.rows)
     {
-        printf("Error: The matrix must be square.\n");
+        printf("Error: The matrix must be a square matrix.\n");
         return 0;
     }
     double trace = 0;
