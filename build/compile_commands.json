@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/lenovo/Documents/GitHub/liweiqi_hw1/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\algebra.c.obj -c C:\\Users\\lenovo\\Documents\\GitHub\\liweiqi_hw1\\src\\algebra.c",
+  "file": "C:/Users/lenovo/Documents/GitHub/liweiqi_hw1/src/algebra.c",
+  "output": "CMakeFiles/main.dir/src/algebra.c.obj"
+},
+{
+  "directory": "C:/Users/lenovo/Documents/GitHub/liweiqi_hw1/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\main.c.obj -c C:\\Users\\lenovo\\Documents\\GitHub\\liweiqi_hw1\\src\\main.c",
+  "file": "C:/Users/lenovo/Documents/GitHub/liweiqi_hw1/src/main.c",
+  "output": "CMakeFiles/main.dir/src/main.c.obj"
+}
+]

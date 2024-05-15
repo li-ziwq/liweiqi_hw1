@@ -1,0 +1,3 @@
+C:/Users/lenovo/Documents/GitHub/liweiqi_hw1/build/CMakeFiles/main.dir
+C:/Users/lenovo/Documents/GitHub/liweiqi_hw1/build/CMakeFiles/edit_cache.dir
+C:/Users/lenovo/Documents/GitHub/liweiqi_hw1/build/CMakeFiles/rebuild_cache.dir

@@ -16,5 +16,7 @@
             "command": "extension.execute",
             "priority": 4
         }
-    ]
+    ],
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "MinGW Makefiles"
 }
